@@ -22,10 +22,6 @@ RUN apt-get update -y
 
 RUN apt-get install docker-engine -y
 
-#RUN groupadd docker
-
 RUN gpasswd -a jenkins docker
-
-#RUN service docker restart
 
 USER jenkins
